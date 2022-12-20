@@ -50,3 +50,7 @@ npx husky add .husky/pre-commit "yarn lint-staged"
 ```bash
 npx sb init
 ```
+
+## jest
+
+[Setup with Vite](https://hung.dev/posts/jest-vite)
