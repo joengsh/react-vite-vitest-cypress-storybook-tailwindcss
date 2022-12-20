@@ -61,3 +61,17 @@ npx sb init
 yarn add -D tailwindcss autoprefixer postcss
 npx tailwindcss init
 ```
+
+## cypress
+
+```bash
+yarn add -D cypress
+# add cypress open to package.json script, then
+yarn cypress:open
+# follow the instruction to do the setup
+```
+
+Action List:
+
+- add tailwindcss support to cypress
+- add [cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor) support to cypress
