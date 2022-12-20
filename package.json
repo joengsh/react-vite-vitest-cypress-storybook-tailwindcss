@@ -7,6 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "jest": "jest",
+    "jest:changed": "jest --onlyChanged",
     "jest:staged": "jest --env=jsdom --findRelatedTests",
     "jest:watch": "jest --watch",
     "jest:coverage": "jest --coverage",
