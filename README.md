@@ -54,3 +54,10 @@ npx sb init
 ## jest
 
 [Setup with Vite](https://hung.dev/posts/jest-vite)
+
+## tailwindcss
+
+```bash
+yarn add -D tailwindcss autoprefixer postcss
+npx tailwindcss init
+```

@@ -7,6 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "jest": "jest",
+    "jest:staged": "jest --env=jsdom --findRelatedTests",
     "jest:watch": "jest --watch",
     "jest:coverage": "jest --coverage",
     "jest:coverage:watch": "jest --coverage --watch",
@@ -26,9 +27,13 @@
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
       "git add"
+    ],
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn jest:staged"
     ]
   },
   "dependencies": {
+    "daisyui": "^2.46.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
