@@ -44,3 +44,9 @@ Add pre-commit hook
 ```bash
 npx husky add .husky/pre-commit "yarn lint-staged"
 ```
+
+## storybook
+
+```bash
+npx sb init
+```
