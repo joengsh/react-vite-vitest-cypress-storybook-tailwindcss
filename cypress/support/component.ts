@@ -33,6 +33,7 @@ declare global {
   namespace Cypress {
     interface Chainable {
       mount: typeof mount;
+      console(subject, method?: string): Chainable<Element>;
     }
   }
 }

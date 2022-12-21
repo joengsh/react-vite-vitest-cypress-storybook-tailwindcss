@@ -73,5 +73,4 @@ yarn cypress:open
 
 Action List:
 
-- add tailwindcss support to cypress
 - add [cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor) support to cypress
