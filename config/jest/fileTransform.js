@@ -1,12 +1,12 @@
 /* eslint @typescript-eslint/no-var-requires: "off" */
 
-const path = require('path');
-const camelcase = require('camelcase');
+import path from 'path';
+import camelcase from 'camelcase';
 
 // This is a custom Jest transformer turning file imports into filenames.
 // http://facebook.github.io/jest/docs/en/webpack.html
 
-module.exports = {
+export default {
   process(src, filename) {
     const assetFilename = JSON.stringify(path.basename(filename));
 
@@ -19,7 +19,7 @@ module.exports = {
       const componentName = `Svg${pascalCaseFilename}`;
       return {
         code: `const React = require('react');
-        module.exports = {
+        export default {
           __esModule: true,
           default: ${assetFilename},
           ReactComponent: React.forwardRef(function ${componentName}(props, ref) {
@@ -38,7 +38,7 @@ module.exports = {
     }
 
     return {
-      code: `module.exports = ${assetFilename};`,
+      code: `export default ${assetFilename};`,
     };
   },
 };

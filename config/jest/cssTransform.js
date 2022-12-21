@@ -1,10 +1,10 @@
 // This is a custom Jest transformer turning style imports into empty objects.
 // http://facebook.github.io/jest/docs/en/webpack.html
 
-module.exports = {
+export default {
   process() {
     return {
-      code: 'module.exports = {};',
+      code: 'export default {};',
     };
   },
   getCacheKey() {

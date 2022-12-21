@@ -1,8 +1,9 @@
-module.exports = {
+export default {
   roots: ['<rootDir>/src'],
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts', '!src/mocks/**'],
   coveragePathIgnorePatterns: [],
   setupFilesAfterEnv: ['./config/jest/setupTests.js'],
+  extensionsToTreatAsEsm: ['.ts', '.tsx'],
   testEnvironment: 'jsdom',
   modulePaths: ['<rootDir>/src'],
   transform: {
@@ -18,6 +19,7 @@ module.exports = {
   moduleNameMapper: {
     '^react-native$': 'react-native-web',
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
   moduleFileExtensions: [
     // Place tsx and ts to beginning as suggestion from Jest team
