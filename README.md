@@ -74,3 +74,8 @@ yarn cypress:open
 Action List:
 
 - add [cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor) support to cypress
+
+Reference:
+[Reactts-vite-template by Davicho-Dev](https://github.com/Davicho-Dev/ReactTs-Vite-Jest-Testing_Library-TailwindCSS-Cypress-Storybook)
+[tailwindcss dashboard sample](https://tailwindcomponents.com/component/responsive-admin-template)
+[tailwind-element](https://tailwind-elements.com/docs/standard/designblocks/landing-page/)
