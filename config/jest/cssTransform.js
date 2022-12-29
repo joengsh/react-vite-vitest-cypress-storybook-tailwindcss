@@ -4,11 +4,11 @@
 export default {
   process() {
     return {
-      code: 'export default {};',
+      code: 'module.export = {};',
     };
   },
   getCacheKey() {
     // The output is always the same.
-    return 'cssTransform';
+    return 'cssTransforms';
   },
 };
