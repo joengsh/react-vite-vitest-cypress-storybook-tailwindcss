@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom/extend-expect';
+import 'tw-elements';
 
 window.matchMedia = (query) => ({
   matches: false,

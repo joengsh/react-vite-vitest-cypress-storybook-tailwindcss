@@ -40,7 +40,6 @@
     ]
   },
   "dependencies": {
-    "daisyui": "^2.46.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -84,6 +83,7 @@
     "lint-staged": "^13.1.0",
     "postcss": "^8.4.20",
     "prettier": "^2.5.1",
+    "tw-elements": "^1.0.0-alpha13",
     "typescript": "^4.7.4",
     "vite": "^3.0.0",
     "vite-aliases": "0.9.7",
