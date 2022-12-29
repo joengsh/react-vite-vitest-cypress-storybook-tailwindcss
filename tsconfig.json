@@ -17,7 +17,9 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@common/*": ["../fe-design-system-ts/src/*"],
+      "@connection/*": ["../fe-connection-ts/src/*"]
     }
   },
   "include": ["src"],

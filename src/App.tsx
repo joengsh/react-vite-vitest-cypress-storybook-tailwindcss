@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer/Footer';
-import Hero from './components/Hero/Hero';
-import Carousel from './components/Carousel/Carousel';
+import Hero from '@/components/Hero/Hero';
+import Carousel from '@/components/Carousel/Carousel';
 import './App.css';
 
 function App() {

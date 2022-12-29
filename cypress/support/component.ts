@@ -19,6 +19,7 @@
 import './commands';
 
 import '@/index.css';
+import 'tw-elements';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

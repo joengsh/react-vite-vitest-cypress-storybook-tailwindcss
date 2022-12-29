@@ -19,6 +19,16 @@ export default defineConfig({
         find: '@',
         replacement: path.resolve(__dirname, './src'),
       },
+      {
+        // TODO: update path
+        find: '@common',
+        replacement: path.resolve(__dirname, '../fe-design-system-ts/src'),
+      },
+      {
+        // TODO: update path
+        find: '@connection',
+        replacement: path.resolve(__dirname, '../fe-connection-ts/src'),
+      },
     ],
   },
 });
