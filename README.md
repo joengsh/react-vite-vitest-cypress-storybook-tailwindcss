@@ -51,6 +51,8 @@ npx husky add .husky/pre-commit "yarn lint-staged"
 npx sb init
 ```
 
+Storybook test using [test-runner](https://storybook.js.org/addons/@storybook/test-runner), this repo also include the jest-image-snapshot for visual regression test.
+
 ## jest
 
 [Setup with Vite](https://hung.dev/posts/jest-vite)
@@ -82,13 +84,14 @@ yarn cypress:open
 ```
 
 Reference:
-[Reactts-vite-template by Davicho-Dev](https://github.com/Davicho-Dev/ReactTs-Vite-Jest-Testing_Library-TailwindCSS-Cypress-Storybook)
-[tailwindcss dashboard sample](https://tailwindcomponents.com/component/responsive-admin-template)
-[tailwind-element](https://tailwind-elements.com/docs/standard/designblocks/landing-page/)
-[merge coverage report](https://dev.to/penx/combining-storybook-cypress-and-jest-code-coverage-4pa5)
+
+- [Reactts-vite-template by Davicho-Dev](https://github.com/Davicho-Dev/ReactTs-Vite-Jest-Testing_Library-TailwindCSS-Cypress-Storybook)
+- [tailwindcss dashboard sample](https://tailwindcomponents.com/component/responsive-admin-template)
+- [tailwind-element](https://tailwind-elements.com/docs/standard/designblocks/landing-page/)
+- [merge coverage report](https://dev.to/penx/combining-storybook-cypress-and-jest-code-coverage-4pa5)
+- [storybook testrunner](https://storybook.js.org/addons/@storybook/test-runner)
 
 Action List:
 
 - create another template for building library and link to this project
 - add [cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor) support to cypress
-- add test to storybook
