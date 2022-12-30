@@ -4,7 +4,7 @@
 
 - eslint and prettier for code rules and styling
 - storybook for component visualisation and documentation
-- jest for unit test
+- jest for unit test and integration test
 - cypress + cucumber for component test and e2e test
 - tailwindcss for style and themes
 
@@ -51,7 +51,7 @@ npx husky add .husky/pre-commit "yarn lint-staged"
 npx sb init
 ```
 
-Storybook test using [test-runner](https://storybook.js.org/addons/@storybook/test-runner), this repo also include the jest-image-snapshot for visual regression test.
+Storybook test using [test-runner](https://storybook.js.org/addons/@storybook/test-runner), this repo also include the jest-image-snapshot for visual regression test. add `snapshotTest: disable` parameter to disable the snapshot test for that particular story.
 
 ## jest
 
@@ -83,7 +83,22 @@ yarn cypress:open
 }
 ```
 
-Reference:
+## testing
+
+| script            | when to use                         | description                                              |
+| ----------------- | ----------------------------------- | -------------------------------------------------------- |
+| jest:staged       | when commit (husky)                 | run test cases corresponding to the modified src         |
+| jest              | merge to release & uat & production | run all the unit test and integration test               |
+| test-storybook:ci | merge to release & uat & production | run all the visual and interaction test based on stories |
+
+TODO:
+
+- add a cypress smoke test suite (cypress:run:smoke) that run before deploying to dev and staging (mainly component test with mocked backend data)
+- add a cypress snaity test suite (cypress:run:snaity) that runs before deploying to release, uat & production (mainly component test with mocked backend data and a few e2e test if necessary)
+- add a cypress regression test suite (cypress:run:regression) that runs on uat or production env when necessary (mainly e2e test)
+- generate and merge the coverage report
+
+## Reference:
 
 - [Reactts-vite-template by Davicho-Dev](https://github.com/Davicho-Dev/ReactTs-Vite-Jest-Testing_Library-TailwindCSS-Cypress-Storybook)
 - [tailwindcss dashboard sample](https://tailwindcomponents.com/component/responsive-admin-template)
@@ -91,7 +106,6 @@ Reference:
 - [merge coverage report](https://dev.to/penx/combining-storybook-cypress-and-jest-code-coverage-4pa5)
 - [storybook testrunner](https://storybook.js.org/addons/@storybook/test-runner)
 
-Action List:
+## Action List:
 
-- create another template for building library and link to this project
 - add [cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor) support to cypress
