@@ -1,5 +1,6 @@
 import { defineConfig, configDefaults } from 'vitest/config';
 import path from 'path';
+import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   test: {
@@ -15,6 +16,7 @@ export default defineConfig({
     },
     setupFiles: './config/vitest/setup.js',
   },
+  plugins: [svgr()],
   resolve: {
     alias: [
       {

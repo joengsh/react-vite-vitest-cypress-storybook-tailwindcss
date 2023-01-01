@@ -1,5 +1,6 @@
 const path = require('path');
 const tsconfigPaths = require('vite-tsconfig-paths').default;
+const svgr = require('vite-plugin-svgr');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -36,7 +37,8 @@ module.exports = {
         // My tsconfig.json isn't simply in viteConfig.root,
         // so I've passed an explicit path to it:
         // projects: [path.resolve(path.dirname(__dirname), 'frontend', 'tsconfig.json')],
-      })
+      }),
+      svgr()
     );
 
     return config;

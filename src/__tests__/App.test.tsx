@@ -7,4 +7,9 @@ describe('App', () => {
     render(<App />);
     expect(screen.queryByTestId('app')).toBeInTheDocument();
   });
+
+  it('should match snapshot', () => {
+    const { container } = render(<App />);
+    expect(container).toMatchSnapshot();
+  });
 });

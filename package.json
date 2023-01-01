@@ -102,6 +102,7 @@
     "vite": "^3.0.0",
     "vite-aliases": "0.9.7",
     "vite-plugin-checker": "^0.5.2",
+    "vite-plugin-svgr": "^2.4.0",
     "vite-tsconfig-paths": "^4.0.3",
     "vitest": "^0.25.8",
     "wait-on": "^7.0.1"
