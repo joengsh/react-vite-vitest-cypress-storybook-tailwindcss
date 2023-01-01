@@ -53,9 +53,13 @@ npx sb init
 
 Storybook test using [test-runner](https://storybook.js.org/addons/@storybook/test-runner), this repo also include the jest-image-snapshot for visual regression test. add `snapshotTest: disable` parameter to disable the snapshot test for that particular story.
 
-## jest
+## jest (removed)
 
 [Setup with Vite](https://hung.dev/posts/jest-vite)
+
+## vitest
+
+[setup](https://vitest.dev/guide/)
 
 ## tailwindcss
 
@@ -87,8 +91,8 @@ yarn cypress:open
 
 | script            | when to use                         | description                                              |
 | ----------------- | ----------------------------------- | -------------------------------------------------------- |
-| jest:staged       | when commit (husky)                 | run test cases corresponding to the modified src         |
-| jest              | merge to release & uat & production | run all the unit test and integration test               |
+| vitest:staged     | when commit (husky)                 | run test cases corresponding to the modified src         |
+| vitest            | merge to release & uat & production | run all the unit test and integration test               |
 | test-storybook:ci | merge to release & uat & production | run all the visual and interaction test based on stories |
 
 TODO:
