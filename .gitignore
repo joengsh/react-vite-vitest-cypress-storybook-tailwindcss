@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 storybook-static
+.nyc_output
+coverage
+cypress/videos
+cypress/screenshots
 
 # Editor directories and files
 .vscode/*
