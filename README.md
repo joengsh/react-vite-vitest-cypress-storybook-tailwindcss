@@ -3,9 +3,9 @@
 ## feature
 
 - eslint and prettier for code rules and styling
-- storybook for component visualisation and documentation
-- jest for unit test and integration test
-- cypress + cucumber for component test and e2e test
+- storybook for component visualisation, snapshot test and documentation
+- vitest for unit test and integration test
+- cypress for component test and e2e test
 - tailwindcss for style and themes
 - enforce convertional commit message
 
@@ -88,6 +88,7 @@ yarn cypress:open
 ```json
 {
   "@/*": ["src/*"],
+  "@asset/*": ["src/asset/*"],
   "@common/*": ["../fe-design-system-ts/src/*"],
   "@connection/*": ["../fe-connection-ts/src/*"]
 }
@@ -106,7 +107,6 @@ TODO:
 - add a cypress smoke test suite (cypress:run:smoke) that run before deploying to dev and staging (mainly component test with mocked backend data)
 - add a cypress snaity test suite (cypress:run:snaity) that runs before deploying to release, uat & production (mainly component test with mocked backend data and a few e2e test if necessary)
 - add a cypress regression test suite (cypress:run:regression) that runs on uat or production env when necessary (mainly e2e test)
-- generate and merge the coverage report
 
 ## Reference:
 
