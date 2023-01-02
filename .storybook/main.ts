@@ -1,5 +1,5 @@
 const path = require('path');
-const tsconfigPaths = require('vite-tsconfig-paths').default;
+const { loadConfigFromFile, mergeConfig } = require('vite');
 const svgr = require('vite-plugin-svgr');
 
 module.exports = {
@@ -30,17 +30,15 @@ module.exports = {
   features: {
     storyStoreV7: true,
   },
-  viteFinal: async (config) => {
-    config.plugins.push(
-      /** @see https://github.com/aleclarson/vite-tsconfig-paths */
-      tsconfigPaths({
-        // My tsconfig.json isn't simply in viteConfig.root,
-        // so I've passed an explicit path to it:
-        // projects: [path.resolve(path.dirname(__dirname), 'frontend', 'tsconfig.json')],
-      }),
-      svgr()
+  async viteFinal(config, { configType }) {
+    const { config: userConfig } = await loadConfigFromFile(
+      path.resolve(__dirname, '../vite.config.ts')
     );
 
-    return config;
+    return mergeConfig(config, {
+      ...userConfig,
+      // manually specify plugins to avoid conflict
+      plugins: [svgr()],
+    });
   },
 };

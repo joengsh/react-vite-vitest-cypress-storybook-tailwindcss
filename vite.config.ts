@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
-// import { ViteAliases } from 'vite-aliases';
 import checker from 'vite-plugin-checker';
 import svgr from 'vite-plugin-svgr';
 import path from 'path';
@@ -10,7 +9,6 @@ import istanbul from 'vite-plugin-istanbul';
 export default defineConfig({
   plugins: [
     react(),
-    // ViteAliases(),
     checker({
       typescript: true,
     }),
@@ -25,6 +23,10 @@ export default defineConfig({
       {
         find: '@',
         replacement: path.resolve(__dirname, './src'),
+      },
+      {
+        find: '@assets',
+        replacement: path.resolve(__dirname, './src/assets'),
       },
       {
         // TODO: update path

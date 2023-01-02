@@ -15,9 +15,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
       "@common/*": ["../fe-design-system-ts/src/*"],
       "@connection/*": ["../fe-connection-ts/src/*"]
     }
