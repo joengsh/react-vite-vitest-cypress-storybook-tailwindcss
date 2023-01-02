@@ -56,6 +56,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
     "@cypress/code-coverage": "^3.10.0",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@joengsh/eslint-config-react": "^1.1.2",

@@ -7,6 +7,12 @@
 - jest for unit test and integration test
 - cypress + cucumber for component test and e2e test
 - tailwindcss for style and themes
+- enforce convertional commit message
+
+## convertional commit message
+
+https://www.conventionalcommits.org/en/v1.0.0/ <br />
+https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
 
 ## eslint and prettier config
 
