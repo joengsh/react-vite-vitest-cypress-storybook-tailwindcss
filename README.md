@@ -14,6 +14,10 @@
 https://www.conventionalcommits.org/en/v1.0.0/ <br />
 https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
 
+## src folder structure
+
+The src folder follows the structure of an atomic design. More details could be found in [here](https://medium.com/yemeksepeti-teknoloji/atomic-design-system-in-frontend-bdbb919290b4) and also [here](https://paulonteri.com/thoughts/atomic-design-react).
+
 ## eslint and prettier config
 
 [eslint-config](https://www.npmjs.com/package/@joengsh/eslint-config-react?activeTab=readme)
@@ -88,7 +92,8 @@ yarn cypress:open
 ```json
 {
   "@/*": ["src/*"],
-  "@asset/*": ["src/asset/*"],
+  "@assets/*": ["src/assets/*"],
+  "@components/*": ["src/components/*"],
   "@common/*": ["../fe-design-system-ts/src/*"],
   "@connection/*": ["../fe-connection-ts/src/*"]
 }
