@@ -31,6 +31,10 @@ export default defineConfig({
         replacement: path.resolve(__dirname, './src/assets'),
       },
       {
+        find: '@components',
+        replacement: path.resolve(__dirname, './src/components'),
+      },
+      {
         // TODO: update path
         find: '@common',
         replacement: path.resolve(__dirname, '../fe-design-system-ts/src'),

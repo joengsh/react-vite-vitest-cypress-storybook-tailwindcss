@@ -1,8 +1,8 @@
 /// <reference types="vite-plugin-svgr/client" />
 
-import Footer from '@/components/Footer/Footer';
-import Hero from '@/components/Hero/Hero';
-import Carousel from '@/components/Carousel/Carousel';
+import Footer from '@components/organisms/Footer/Footer';
+import Hero from '@components/organisms/Hero/Hero';
+import Carousel from '@components/molecules/Carousel/Carousel';
 import './App.css';
 import { ReactComponent as Logo } from '@assets/react.svg';
 

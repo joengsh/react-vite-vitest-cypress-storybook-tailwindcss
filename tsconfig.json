@@ -19,6 +19,7 @@
     "paths": {
       "@/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
       "@common/*": ["../fe-design-system-ts/src/*"],
       "@connection/*": ["../fe-connection-ts/src/*"]
     }
