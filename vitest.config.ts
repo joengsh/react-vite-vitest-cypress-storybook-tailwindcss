@@ -15,6 +15,9 @@ export default defineConfig({
       exclude: [...configDefaults.exclude, 'config/vitest/*', 'src/**/*.stories.*'],
     },
     setupFiles: './config/vitest/setup.js',
+    resolveSnapshotPath: (testPath, snapExtension) => {
+      return '__snapshots__/serialized/' + path.basename(testPath) + snapExtension + 'vi';
+    },
   },
   plugins: [svgr()],
   resolve: {

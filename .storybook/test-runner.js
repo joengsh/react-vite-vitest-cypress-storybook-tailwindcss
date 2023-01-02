@@ -1,7 +1,7 @@
 const { toMatchImageSnapshot } = require('jest-image-snapshot');
 const { getStoryContext } = require('@storybook/test-runner');
 
-const customSnapshotsDir = `${process.cwd()}/__snapshots__`;
+const customSnapshotsDir = `${process.cwd()}/__snapshots__/image/`;
 
 module.exports = {
   setup() {
