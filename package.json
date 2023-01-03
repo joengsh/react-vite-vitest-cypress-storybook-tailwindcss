@@ -116,15 +116,5 @@
     "vite-plugin-svgr": "^2.4.0",
     "vitest": "^0.25.8",
     "wait-on": "^7.0.1"
-  },
-  "resolutions": {
-    "istanbul-lib-coverage": "^3.0.0",
-    "istanbul-lib-hook": "^3.0.0",
-    "istanbul-lib-instrument": "^4.0.0",
-    "istanbul-lib-processinfo": "^2.0.2",
-    "istanbul-lib-report": "^3.0.0",
-    "istanbul-lib-source-maps": "^4.0.0",
-    "istanbul-reports": "^3.0.2",
-    "nyc": "~15.0.0"
   }
 }
