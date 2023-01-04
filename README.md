@@ -121,6 +121,7 @@ TODO:
 - [merge coverage report](https://dev.to/penx/combining-storybook-cypress-and-jest-code-coverage-4pa5)
 - [storybook testrunner](https://storybook.js.org/addons/@storybook/test-runner)
 - [React re-renders guide](https://www.developerway.com/posts/react-re-renders-guide)
+- [use-context-selector](https://dev.to/romaintrotard/use-context-selector-demystified-4f8e)
 
 ## Action List:
 
