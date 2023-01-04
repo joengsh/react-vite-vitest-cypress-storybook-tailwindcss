@@ -4,7 +4,7 @@ import coverageTask from '@cypress/code-coverage/task';
 export default defineConfig({
   env: {
     codeCoverage: {
-      exclude: 'cypress/**/*.*',
+      exclude: ['cypress/**/*.*', 'src/main.tsx'],
     },
   },
   component: {

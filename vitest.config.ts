@@ -12,7 +12,7 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
       reportsDirectory: './coverage/unit',
       include: ['src/**/*'],
-      exclude: [...configDefaults.exclude, 'config/vitest/*', 'src/**/*.stories.*'],
+      exclude: [...configDefaults.exclude, 'config/vitest/*', 'src/**/*.stories.*', 'src/main.tsx'],
     },
     setupFiles: './config/vitest/setup.js',
     resolveSnapshotPath: (testPath, snapExtension) => {
