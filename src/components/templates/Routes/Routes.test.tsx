@@ -7,7 +7,7 @@ import { createMemoryRouter, RouterProvider } from 'react-router-dom';
 const router = createMemoryRouter(routes);
 
 describe('Route', () => {
-  test('First layer route should function as expected', () => {
+  test('First layer route should function as expected', async () => {
     render(<RouterProvider router={router} />);
     // TODO: click app go app, click page go page, click about go about
     fireEvent(
@@ -17,7 +17,7 @@ describe('Route', () => {
         cancelable: true,
       })
     );
-    waitFor(() => expect(screen.findByTestId('app')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByTestId('app')).toBeInTheDocument());
 
     fireEvent(
       screen.getByTestId('nav-page'),
@@ -26,7 +26,7 @@ describe('Route', () => {
         cancelable: true,
       })
     );
-    waitFor(() => expect(screen.findByTestId('page')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByTestId('page')).toBeInTheDocument());
     fireEvent(
       screen.getByTestId('nav-about'),
       new MouseEvent('click', {
@@ -34,6 +34,6 @@ describe('Route', () => {
         cancelable: true,
       })
     );
-    waitFor(() => expect(screen.findByDisplayValue('About')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByTestId('about')).toBeInTheDocument());
   });
 });
