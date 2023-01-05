@@ -122,6 +122,7 @@ TODO:
 - [storybook testrunner](https://storybook.js.org/addons/@storybook/test-runner)
 - [React re-renders guide](https://www.developerway.com/posts/react-re-renders-guide)
 - [use-context-selector](https://dev.to/romaintrotard/use-context-selector-demystified-4f8e)
+- [Framer motion](https://www.framer.com/motion/)
 
 ## Action List:
 
