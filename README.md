@@ -16,7 +16,9 @@ https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/c
 
 ## src folder structure
 
-The src folder follows the structure of an atomic design. More details could be found in [here](https://medium.com/yemeksepeti-teknoloji/atomic-design-system-in-frontend-bdbb919290b4) and also [here](https://paulonteri.com/thoughts/atomic-design-react).
+The src folder follows the structure of an [atomic redesign](https://github.com/takefumi-yoshii/atomic-redesign). Similar to atomic design described in [here](https://medium.com/yemeksepeti-teknoloji/atomic-design-system-in-frontend-bdbb919290b4) and also [here](https://paulonteri.com/thoughts/atomic-design-react).
+
+Main difference is that atomic design focus on the UI component while atomic redesign also take the props, state and context into account.
 
 ## env variables
 

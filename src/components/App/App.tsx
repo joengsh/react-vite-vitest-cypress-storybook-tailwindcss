@@ -5,8 +5,13 @@ import Hero from '@components/organisms/Hero/Hero';
 import Carousel from '@components/molecules/Carousel/Carousel';
 import './App.css';
 import { ReactComponent as Logo } from '@assets/react.svg';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    console.log('app');
+  }, []);
+
   return (
     <div className="App" data-testid="app">
       <div>
