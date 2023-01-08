@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import React, { useRef, useEffect, HTMLProps, FC } from 'react';
 
 export interface CanvasProp extends HTMLProps<HTMLCanvasElement> {

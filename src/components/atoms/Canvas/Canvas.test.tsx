@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { composeStories } from '@storybook/testing-react';
 import * as stories from './Canvas.stories';
 import Canvas from './index';
@@ -14,6 +14,6 @@ it('should contain a canvas', async () => {
 
 it('should call the init function', async () => {
   const spy = vi.fn();
-  const { container } = render(<Canvas init={spy} />);
+  render(<Canvas init={spy} />);
   expect(spy).toHaveBeenCalled();
 });
