@@ -51,6 +51,7 @@
     ]
   },
   "dependencies": {
+    "@esotericsoftware/spine-webgl": "^4.2.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1"
@@ -117,6 +118,7 @@
     "vite-plugin-istanbul": "^3.0.4",
     "vite-plugin-svgr": "^2.4.0",
     "vitest": "^0.25.8",
+    "vitest-canvas-mock": "^0.2.2",
     "wait-on": "^7.0.1"
   }
 }

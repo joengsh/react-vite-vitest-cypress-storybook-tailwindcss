@@ -18,6 +18,16 @@ export default defineConfig({
     resolveSnapshotPath: (testPath, snapExtension) => {
       return '__snapshots__/serialized/' + path.basename(testPath) + snapExtension + 'vi';
     },
+    deps: {
+      inline: ['vitest-canvas-mock'],
+    },
+    // For this config, check https://github.com/vitest-dev/vitest/issues/740
+    threads: false,
+    environmentOptions: {
+      jsdom: {
+        resources: 'usable',
+      },
+    },
   },
   plugins: [svgr()],
   resolve: {

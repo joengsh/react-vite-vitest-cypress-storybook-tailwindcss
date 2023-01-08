@@ -4,6 +4,7 @@ import { expect, afterEach } from 'vitest';
 import { cleanup } from '@testing-library/react';
 import matchers from '@testing-library/jest-dom/matchers';
 import { fetch, Request, Response } from '@remix-run/web-fetch';
+import 'vitest-canvas-mock';
 
 if (!globalThis.fetch) {
   // Built-in lib.dom.d.ts expects `fetch(Request | string, ...)` but the web
