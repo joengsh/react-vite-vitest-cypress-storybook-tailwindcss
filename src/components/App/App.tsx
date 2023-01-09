@@ -6,6 +6,7 @@ import Carousel from '@components/molecules/Carousel/Carousel';
 import './App.css';
 import { ReactComponent as Logo } from '@assets/react.svg';
 import { useEffect } from 'react';
+import AnimatedComponent from '@/stories/AnimatedComponent';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       <Hero />
       <Carousel />
       <Footer />
+      <AnimatedComponent />
     </div>
   );
 }

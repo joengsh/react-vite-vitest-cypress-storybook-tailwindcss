@@ -699,6 +699,9 @@ exports[`App > should match snapshot 1`] = `
         </a>
       </div>
     </footer>
+    <div
+      class="box"
+    />
   </div>
 </div>
 `;
