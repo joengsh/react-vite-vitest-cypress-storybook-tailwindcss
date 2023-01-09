@@ -26,7 +26,7 @@ const PixiTest = () => {
     <>
       <button onClick={onClick}>resize</button>
       {[...Array(10).keys()].map((i) => {
-        return <Pixi width={width} height={height} />;
+        return <Pixi key={i} width={width} height={height} />;
       })}
     </>
   );

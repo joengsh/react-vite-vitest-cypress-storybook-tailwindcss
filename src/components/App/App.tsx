@@ -6,7 +6,7 @@ import Carousel from '@components/molecules/Carousel/Carousel';
 import './App.css';
 import { ReactComponent as Logo } from '@assets/react.svg';
 import { useEffect } from 'react';
-import PixiTest, { Pixi } from '../templates/PixiContent';
+import PixiTest from '../templates/PixiContent';
 
 function App() {
   useEffect(() => {
@@ -27,7 +27,7 @@ function App() {
       <Hero />
       <Carousel />
       <Footer />
-      {/* <PixiTest /> */}
+      <PixiTest />
     </div>
   );
 }

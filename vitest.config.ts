@@ -14,7 +14,8 @@ export default defineConfig({
       include: ['src/**/*'],
       exclude: [...configDefaults.exclude, 'config/vitest/*', 'src/**/*.stories.*', 'src/main.tsx'],
     },
-    setupFiles: './config/vitest/setup.js',
+    // setupFiles: './config/vitest/setup.js',
+    setupFiles: ['./config/vitest/setup.js', './config/vitest/canvas.js'],
     resolveSnapshotPath: (testPath, snapExtension) => {
       return '__snapshots__/serialized/' + path.basename(testPath) + snapExtension + 'vi';
     },
