@@ -7,12 +7,12 @@ export interface CanvasProp extends HTMLProps<HTMLCanvasElement> {
   init: (canvas: HTMLCanvasElement) => void;
 }
 
-const Canvas: FC<CanvasProp> = (props) => {
+const Canvas: FC<CanvasProp> = ({ init, ...props }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas: HTMLCanvasElement = canvasRef.current!;
-    props.init(canvas);
+    init(canvas);
   }, []);
 
   return <canvas ref={canvasRef} {...props} />;
