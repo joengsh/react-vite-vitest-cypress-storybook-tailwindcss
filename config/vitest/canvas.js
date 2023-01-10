@@ -1,10 +1,22 @@
+/* eslint-disable import/first */
 // vitest.setup.ts
 import { afterAll, vi } from 'vitest';
-// eslint-disable-next-line import/first
-import 'jest-webgl-canvas-mock';
-import getCanvasWindow from 'jest-webgl-canvas-mock/lib/window';
 // @ts-expect-error: Global type missing
 global.jest = vi;
+
+import 'jest-webgl-canvas-mock';
+import getCanvasWindow from 'jest-webgl-canvas-mock/lib/window';
+
+// beforeAll(() => {
+//   vi.mock('pixi.js', async () => {
+//     const actual = await vi.importActual('pixi.js');
+//     return { ...actual };
+//   });
+// });
+
+// afterAll(() => {
+//   vi.clearAllMocks();
+// });
 
 const apis = [
   'Path2D',

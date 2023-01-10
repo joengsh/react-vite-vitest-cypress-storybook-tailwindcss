@@ -699,49 +699,13 @@ exports[`App > should match snapshot 1`] = `
         </a>
       </div>
     </footer>
-    <button>
-      resize
-    </button>
     <canvas
-      height="600"
-      width="800"
+      height="240"
+      width="400"
     />
-    <canvas
-      height="600"
-      width="800"
-    />
-    <canvas
-      height="600"
-      width="800"
-    />
-    <canvas
-      height="600"
-      width="800"
-    />
-    <canvas
-      height="600"
-      width="800"
-    />
-    <canvas
-      height="600"
-      width="800"
-    />
-    <canvas
-      height="600"
-      width="800"
-    />
-    <canvas
-      height="600"
-      width="800"
-    />
-    <canvas
-      height="600"
-      width="800"
-    />
-    <canvas
-      height="600"
-      width="800"
-    />
+    <div>
+      Loading...
+    </div>
   </div>
 </div>
 `;

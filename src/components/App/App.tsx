@@ -6,7 +6,9 @@ import Carousel from '@components/molecules/Carousel/Carousel';
 import './App.css';
 import { ReactComponent as Logo } from '@assets/react.svg';
 import { useEffect } from 'react';
-import PixiTest from '../templates/PixiContent';
+import PixiSpineStage from '../molecules/PixiSpineStage';
+import { Spine } from 'pixi-spine';
+import { Pixi } from '@components/templates/PixiContent';
 
 function App() {
   useEffect(() => {
@@ -27,7 +29,22 @@ function App() {
       <Hero />
       <Carousel />
       <Footer />
-      <PixiTest />
+      <Pixi width={400} height={240} />
+      <PixiSpineStage
+        x={200}
+        y={300}
+        scale={0.4}
+        options={{ width: 600, height: 400, transparent: true }}
+        src="spine/spineboy.json"
+        onMount={(instance: Spine) => {
+          if (instance.state.hasAnimation('run')) {
+            // run forever, little boy!
+            instance.state.setAnimation(0, 'run', true);
+            // dont run too fast
+            instance.state.timeScale = 0.1;
+          }
+        }}
+      />
     </div>
   );
 }

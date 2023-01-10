@@ -151,6 +151,8 @@ yarn cypress:open
 - [React re-renders guide](https://www.developerway.com/posts/react-re-renders-guide)
 - [use-context-selector](https://dev.to/romaintrotard/use-context-selector-demystified-4f8e)
 - [Framer motion](https://www.framer.com/motion/)
+- [pixi v5 doc](https://pixijs.download/v5.3.12/docs/PIXI.html)
+- [spine api](http://en.esotericsoftware.com/spine-api-reference)
 
 ## Action List:
 
